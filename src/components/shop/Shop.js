@@ -11,17 +11,21 @@ function Shop() {
               Buy Iphone 13 for 3 lac Rs/Pkr
             </h4>
             <div
-              class="btn-group"
+              className="btn-group"
               role="group"
               aria-label="Basic mixed styles example"
             >
-              <button type="button" class="btn btn-danger">
+              <button type="button" className="btn btn-danger">
                 -
               </button>
-              <button disabled type="button" class="btn btn-warning">
-                <h5> Deposit / Withdrawl</h5>
+
+              <button disabled type="button" className="btn btn-warning">
+                <h5>Deposit / Withdrawl</h5>
+
+              
+
               </button>
-              <button type="button" class="btn btn-success">
+              <button type="button" className="btn btn-success">
                 +
               </button>
             </div>
