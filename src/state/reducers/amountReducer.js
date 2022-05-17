@@ -1,4 +1,4 @@
-export default function amountReducer(state = 0, action) {
+const reducer = (state = 0, action) => {
   if (action.type === "DEPOSIT") {
     return state + action.payload;
   } else if (action.type === "WITHDRAW") {
@@ -6,4 +6,5 @@ export default function amountReducer(state = 0, action) {
   } else {
     return state;
   }
-}
+};
+export default reducer;
