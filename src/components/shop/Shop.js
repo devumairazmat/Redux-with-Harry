@@ -18,8 +18,12 @@ function Shop() {
               <button type="button" className="btn btn-danger">
                 -
               </button>
+
               <button disabled type="button" className="btn btn-warning">
                 <h5>Deposit / Withdrawl</h5>
+
+              
+
               </button>
               <button type="button" className="btn btn-success">
                 +
