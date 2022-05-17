@@ -19,7 +19,7 @@ function Shop() {
                 -
               </button>
               <button disabled type="button" class="btn btn-warning">
-                <h5></h5> Deposit / Withdrawl</h5>
+                <h5>Deposit / Withdrawl</h5>
               </button>
               <button type="button" class="btn btn-success">
                 +
