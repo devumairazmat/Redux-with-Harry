@@ -33,8 +33,16 @@ function Shop() {
               >
                 -
               </button>
+
               <button disabled type="button" className="btn btn-warning">
+
                 <h5>Deposit / Withdrawl: {balance} Pkr</h5>
+
+            
+
+              
+
+
               </button>
               <button
                 type="button"
