@@ -35,8 +35,8 @@ function Navbar() {
               </li>
             </ul>
             <form className="d-flex">
-              <button className="btn btn-outline-success" type="submit">
-                Your Balnce is : {amount}
+              <button className="btn btn-success" type="submit">
+                Your Balnce is : {amount} Pkr
               </button>
             </form>
           </div>

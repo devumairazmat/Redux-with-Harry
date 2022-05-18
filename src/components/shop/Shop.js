@@ -1,6 +1,15 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { bindActionCreators } from "redux";
+import { actionCreators } from "../../state/index";
 
 function Shop() {
+  const dispatch = useDispatch();
+  const balance = useSelector((state) => state.amount);
+  const { withdrawMoney, depositMoney } = bindActionCreators(
+    actionCreators,
+    dispatch
+  );
   return (
     <div>
       <div className="container text-center">
@@ -15,13 +24,25 @@ function Shop() {
               role="group"
               aria-label="Basic mixed styles example"
             >
-              <button type="button" className="btn btn-danger">
+              <button
+                type="button"
+                className="btn btn-danger"
+                onClick={() => {
+                  withdrawMoney(100000);
+                }}
+              >
                 -
               </button>
               <button disabled type="button" className="btn btn-warning">
-                <h5>Deposit / Withdrawl</h5>
+                <h5>Deposit / Withdrawl: {balance} Pkr</h5>
               </button>
-              <button type="button" className="btn btn-success">
+              <button
+                type="button"
+                className="btn btn-success"
+                onClick={() => {
+                  depositMoney(100000);
+                }}
+              >
                 +
               </button>
             </div>
